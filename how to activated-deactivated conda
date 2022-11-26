@@ -1,0 +1,11 @@
+1. Lets see if conda is activated for base 
+	conda info --envs (it will shows current envs, Envs with (*)is running 
+	# conda environments:
+	#
+	base                  *  /home/user_name/miniforge3
+	streamlit                /home/user_name/miniforge3/envs/streamlit
+2. To stop from running conda venv already from beggining just type:
+	conda config --set changeps1 false  
+
+3. To strat conda venv from begining type:
+	conda config --set changeps1 true
