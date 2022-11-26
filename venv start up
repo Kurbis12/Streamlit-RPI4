@@ -1,0 +1,18 @@
+  TO CREATE VIRTUAL ENVIIROMENTAL on RPI4
+
+After you have install python3 and python3-venv create venv 
+
+	1. python3 -m venv name_of_directory
+Test your folder of venv
+	2. cd ~/name_of_directory
+Check  whats inside of your venv folder
+	ls -ls
+Find and open file called pyvenv.cfg
+	3. cat pyvenv.cfg
+	you should see fallowing( home = /usr/bin
+				  include-system-site-packages = false
+				  version = 3.7.3
+To satrt venv just type cd ~/name_of_directory(opens folder you created for venv)
+	4. source bin/activate
+
+Thats it you have created your venv. Now install all pacages or libarys what you will need for your project
