@@ -1,0 +1,15 @@
+HOW TO START STREAMLIT STREAMLIT ON RASPBERRY PI4 VIA CRONTAB
+
+Lets strat crontab:
+	1. crontab -e ( now you are in crontab task planner)
+
+Create crontab task Virlual venv:
+	2. * * * * *  /home/user_name/app/bin/python3 -m streamlit run /home/user_name/streamlit/Log_in.py (it will start streamlit via venv)
+	wait a minute and it will start 
+
+Create Crontab task Conda venv:
+	3.* * * * *  /home/user_name/miniforge3/bin/python3 -m streamlit run /home/user_name/streamlit/Log_in.py (will start through canda venv for me it is working  better)
+
+# important note set time in crotab when program is starting! otherwise it will run program all the time and it will slow down your RPI4 and program 
+
+# TO KNOW HOW TO START VENV PLEASE READ (VEN START UP)
